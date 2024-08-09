@@ -4,6 +4,7 @@ import { getLeads, addLead, updateLead, deleteLead, Lead } from '../utils/leads'
 //AÑADE VALIDACIONES, AÑADE UNA FUNCION PARA ELIMINAR TODOS LOS LEADS
 //AÑADE UN BASURERO PARA RECUPERAR LEADS ELIMINADOS
 //AÑADE ALERTAS PARA CONFIRMAR ACCIONES
+//CORRIGE EL ERROR DE TIPOS
 
 const AdminComponent: React.FC = () => {
   const [leads, setLeads] = useState<Lead[]>(getLeads());
