@@ -3,10 +3,14 @@ import React from 'react';
 //CREA UNA TABLA USANDO TAILWILD PARA MAPEAR LOS DATOS DE PRODUCTOS
 const UserComponent: React.FC = () => {
   return (
-    <div>
-      <h2>User Dashboard</h2>
-      <p>Welcome, User!</p>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+    <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">User Panel</h2>
+      <p className="text-lg text-gray-700">
+        Welcome, User!
+      </p>
     </div>
+  </div>
   );
 };
 
