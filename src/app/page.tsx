@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { fetchUser, User } from './utils/user';
+//LA PRUEBA INICIA AQUI. RECUERDA QUE PUEDES REUTILIZAR CUALQUIER CODIGO EXISTENTE EN EL REPOSITORIO.
 //OBTENER EL USUARIO DE UTILS Y CREA UNA FUNCION PARA REDIRECCIONAR SEGUN EL ROL
 const Home: React.FC = () => {
   const router = useRouter();

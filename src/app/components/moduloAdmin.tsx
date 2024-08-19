@@ -64,7 +64,7 @@ const AdminComponent: React.FC = () => {
           />
           <select
             value={newLead.status || ''}
-            onChange={(e) => setNewLead({ ...newLead, status: e.target.value })}
+            onChange={(e) => setNewLead({ ...newLead, status: e.target.value as "Contacted" | "Not Contacted" | "Interested" | "Closed" | undefined })}
             className="mb-2 p-2 border border-gray-300 rounded"
           >
             <option value="">Select Status</option>
@@ -107,7 +107,7 @@ const AdminComponent: React.FC = () => {
             />
             <select
               value={editLead.status || ''}
-              onChange={(e) => setEditLead({ ...editLead, status: e.target.value })}
+              onChange={(e) => setEditLead({ ...editLead, status: e.target.value as "Contacted" | "Not Contacted" | "Interested" | "Closed" })}
               className="mb-2 p-2 border border-gray-300 rounded"
             >
               <option value="">Select Status</option>
